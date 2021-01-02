@@ -119,9 +119,7 @@ class UnitTestsAnnuaireServicePublic(unittest.TestCase):
 
         number_of_pages = 8
 
-        i = 1
-
-        for x in range(1, number_of_pages + 1):
+        for i in range(1, number_of_pages + 1):
             # Request the content of a page from the url
             html_list = requests.get(url_list)
 
