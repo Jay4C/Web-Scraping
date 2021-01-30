@@ -5,7 +5,7 @@ import pymysql.cursors
 import unittest
 
 
-class UnitTestsDataMinerYellowPagesAntiguaAndBarbuda(unittest.TestCase):
+class UnitTestsDataMinerYellowPagesAruba(unittest.TestCase):
     def test_extract_email_from_one_result(self):
         print("test_extract_email_from_one_result")
 
@@ -13,7 +13,7 @@ class UnitTestsDataMinerYellowPagesAntiguaAndBarbuda(unittest.TestCase):
             'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103'
         }
 
-        url = "https://www.findyello.com/antigua/sugar-ridge-resort-limited/profile/hotels-and-motels/"
+        url = "https://www.findyello.com/aruba/thrifty-car-rental/profile/wayaka-33-f/"
 
         time.sleep(2)
 
@@ -46,7 +46,7 @@ class UnitTestsDataMinerYellowPagesAntiguaAndBarbuda(unittest.TestCase):
             'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103'
         }
 
-        url = "https://www.findyello.com/antigua/?search=hotel&pageno=1"
+        url = "https://www.findyello.com/aruba/?search=hotel&pageno=1"
 
         time.sleep(2)
 
@@ -97,7 +97,7 @@ class UnitTestsDataMinerYellowPagesAntiguaAndBarbuda(unittest.TestCase):
 
         activity = "hotel"
 
-        city = "antigua"
+        city = "aruba"
 
         number_of_pages = 0
 
@@ -168,6 +168,7 @@ class UnitTestsDataMinerYellowPagesAntiguaAndBarbuda(unittest.TestCase):
                                     .replace('https://www.findyello.com/redirector.php?yelref=http%3A%2F%2F', '') \
                                     .replace('https://www.findyello.com/redirector.php?yelref=', '') \
                                     .replace('www.', '') \
+                                    .replace('%2F', '') \
                                     .split('/')[0]
 
                                 print(str(i_1) + " email : " + email)
@@ -263,7 +264,7 @@ class UnitTestsDataMinerYellowPagesAntiguaAndBarbuda(unittest.TestCase):
         ]
 
         capitales_du_monde = [
-            {'id': '935', 'nom': 'antigua', 'pays': 'antigua'},
+            {'id': '936', 'nom': 'aruba', 'pays': 'aruba'},
         ]
 
         try:
