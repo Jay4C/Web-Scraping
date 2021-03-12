@@ -220,8 +220,8 @@ class UnitTestsDataMiningWipoFreeEnergyDevices(unittest.TestCase):
                             connection = pymysql.connect(
                                 host='localhost',
                                 port=3306,
-                                user='root',
-                                password='v2HJJzexYxlp0D0So77ztwMOKEKu97@@@@@@',
+                                user='',
+                                password='',
                                 db='patents',
                                 charset='utf8mb4',
                                 cursorclass=pymysql.cursors.DictCursor
