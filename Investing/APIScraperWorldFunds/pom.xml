@@ -74,7 +74,7 @@ knowledge of the CeCILL-B license and that you accept its terms.
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
-            <version>3.5.4</version>
+            <version>3.9.4</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
         <dependency>
